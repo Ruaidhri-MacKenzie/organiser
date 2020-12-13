@@ -1,0 +1,32 @@
+.task {
+	display: grid;
+	grid-template-columns: 1fr 3fr 8fr;
+	align-items: center;
+	color: #fff;
+	background-color: #000033;
+	margin: 1em;
+}
+
+.task__checkbox {
+	margin: 2em;
+}
+
+.task__name {
+	padding: 0.5em;
+}
+
+.task__description {
+	padding: 1em;
+}
+
+/* Name when checkbox is checked */
+.task__checkbox:checked ~ .task__name {
+	text-decoration: line-through;
+	color: grey;
+}
+
+/* Description when checkbox is checked */
+.task__checkbox:checked ~ .task__description {
+	text-decoration: line-through;
+	color: grey;
+}
