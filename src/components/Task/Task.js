@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './Task.css';
 
-const Task = ({ name, description, isCompleted }) => {
+const Task = ({ name = "", description = "", isCompleted = false }) => {
 	const [isChecked, setIsChecked] = useState(isCompleted);
-	const toggleIsChecked = () => setIsChecked(!isChecked);
+	const handleChecked = e => setIsChecked(!isChecked);
 
 	return (
 		<li className="task">
-			<input className="task__checkbox" type="checkbox" checked={isChecked} onClick={toggleIsChecked} />
+			<input className="task__checkbox" type="checkbox" checked={isChecked} onChange={handleChecked} />
 			<h1 className="task__name">{name}</h1>
 			<p className="task__description">{description}</p>
 		</li>
