@@ -1,6 +1,6 @@
 .task {
 	display: grid;
-	grid-template-columns: 1fr 3fr 8fr;
+	grid-template-columns: 1fr 4fr 7fr;
 	align-items: center;
 	color: #fff;
 	background-color: #000033;
@@ -13,9 +13,11 @@
 
 .task__name {
 	padding: 0.5em;
+	justify-self: flex-start;
 }
 
 .task__description {
+	justify-self: flex-start;
 	padding: 1em;
 }
 
