@@ -1,6 +1,6 @@
 .task {
 	display: grid;
-	grid-template-columns: 1fr 4fr 7fr;
+	grid-template-columns: 1fr 4fr 6fr 1fr;
 	align-items: center;
 	color: #fff;
 	background-color: #000033;
@@ -19,6 +19,9 @@
 .task__description {
 	justify-self: flex-start;
 	padding: 1em;
+}
+
+.task__delete {
 }
 
 /* Name when checkbox is checked */
